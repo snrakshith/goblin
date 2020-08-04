@@ -1,0 +1,5 @@
+Collection of all consensus algorithms
+
+coordinative --> 
+competative --> 
+hybrid --> 
