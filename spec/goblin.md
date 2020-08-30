@@ -1,7 +1,5 @@
 # The U Language Specification
 
-I release this document under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0) and [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
 Version 0
 
 ## Table of Contents
@@ -195,7 +193,7 @@ Each data type has one falsy value: for numbers, its 0.
 
 Texts use only the single-quote `'` character. Regular expressions are just texts.
 `\'` is the escaped version of the single quote character.
- `''`, empty text, is the falsy value. Texts are always immutable.
+`''`, empty text, is the falsy value. Texts are always immutable.
 
 ```
 'abcd'
@@ -218,9 +216,9 @@ Comments start with a semicolon.
 ```
 
 Semicolons are the comment character because semicolons:
-  a) require only one key,
-  b) are easy to reach, and
-  c) aren't mistaken for another operation.
+a) require only one key,
+b) are easy to reach, and
+c) aren't mistaken for another operation.
 Comments may be in block format.
 Indentation is 2 spaces.
 
@@ -268,7 +266,6 @@ Sets may be also written as:
 ```
 
 The read out-loud equilavent would be `set column to (set of 1 2 3)`. The read out-loud version breaks the syntax rules. Either way we are creating new syntax. The `{}` for is common, known, easy to learn, and only 'one-level' from the principle of read out-loud as is.
-
 
 #### 2.3.2 Group
 
@@ -605,7 +602,7 @@ myAdd 3  ; num is now 3
 mySubtract 2  ; num is now 1
 ```
 
-Any references to mutable data types, such as list or object, *must* start with a `$`.
+Any references to mutable data types, such as list or object, _must_ start with a `$`.
 
 ```
 set $a $[1 2 3]
@@ -869,6 +866,7 @@ send channel value
   ```
 - TODO example multi async - graph
   ```
+
   ```
 
 ## 3. Universal Functions
@@ -947,6 +945,7 @@ TODO to consider... format, slice; tuple/list/set/group/map/object operations
 - TODO stand alone / repl (?)
 
 TODO Question F76E03F7 on memory management:
+
 - Would it be possible to determine how to manage memory at compile time? For example, a C developer has to allocate memory, use memory, then figure out when to deallocate memory. Most languages without "deallocate" commands manage this at run-time with a garbage collector / reference counter. Would it be possible to automatically figure out when to "deallocate" at compile (build)? Avoids the memory and CPU overhead of a run-time memory management system...
 
 ### 4.1 Error Messages
@@ -970,7 +969,7 @@ helloWorld.u line 20 fSVIHwQ1SnO53gAAzrEu0g
 
 At build time, the user should have the option of seeing the first error, or all errors. You may offer the fix the errors automatically for the user. You may enter into watch mode if there is a compile error until all errors are fixed.
 
-* * *
+---
 
 - Each indent should be two spaces per indent.
 - Functions must contain less than ten statements.
@@ -992,7 +991,7 @@ At build time, the user should have the option of seeing the first error, or all
 ## 5. Standard Library
 
 - TODO Note where something would be a browser specific library or a server/local specific library.
-- Functions in modules in the standard library should not be nested past one level. (e.g. math.abs  instead of math.number.abs )
+- Functions in modules in the standard library should not be nested past one level. (e.g. math.abs instead of math.number.abs )
 - Function names should always be verbs or start with verbs.
 - Function name should be comprehensive (e.g. loadJson v load).
 
@@ -1053,10 +1052,10 @@ TODO what basic type should represent datetimes? Number, Text, or Map?
 #### TODO Network
 
 - TODO HTTP, SSL, sockets
-    - CGI
-    - URL: Formatting, parsing texts for IP, domain, path, query text etc
-    - Server
-    - Headers / cookies
+  - CGI
+  - URL: Formatting, parsing texts for IP, domain, path, query text etc
+  - Server
+  - Headers / cookies
 - TODO Email (pop, imap, smtp, etc)
 - TODO HTML
 - TODO FTP (?)
@@ -1080,7 +1079,7 @@ TODO what basic type should represent datetimes? Number, Text, or Map?
 
 - TODO Execution (parsing command line, etc)
 - TODO Signals
-    - exit
+  - exit
 - TODO Users and permissions
 - TODO foreign function interface
 
@@ -1089,7 +1088,7 @@ TODO what basic type should represent datetimes? Number, Text, or Map?
 #### TODO Multimedia
 
 - TODO Images
-    - Fonts
+  - Fonts
 - TODO Audio and sound generation/synthesis
 - TODO Video
 - TODO 2d/3d graphics
@@ -1108,10 +1107,10 @@ TODO what basic type should represent datetimes? Number, Text, or Map?
 #### TODO Testing
 
 - Unit testing
-    - Structure
-    - Assertions
-    - Coverage
-    - Spy/stub
+  - Structure
+  - Assertions
+  - Coverage
+  - Spy/stub
 - Debugging
 - Performance
 - Documentation
@@ -1122,7 +1121,7 @@ Any dependency change should be treated as a breaking change.
 
 Versions may be whole numbers or hashes. Versions are immutable. Version tags, such as 'latest', 'stable', or 'jazz hands' may be used. A version tag is a reference to version. The package author may change the version tag to a different version at another time. The dependency manager should default to use specific versions (ie number or hash, not the tag). The user may override to use a version tag instead.
 
-When you run `u install packageName`, it will by default pick the latest specific version currently tagged with `stable` or `stable-.*` (where .* is anything), or the specific version currently tagged as `latest`, or finally the actual latest version.
+When you run `u install packageName`, it will by default pick the latest specific version currently tagged with `stable` or `stable-.*` (where .\* is anything), or the specific version currently tagged as `latest`, or finally the actual latest version.
 
 TODO
 

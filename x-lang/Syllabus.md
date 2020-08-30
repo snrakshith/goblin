@@ -1,0 +1,11 @@
+- AST
+- Regex
+- DSA
+- Programming
+- Java Case Study
+- Toolchain i.e., C++ , etc
+- Study Various Pipelines
+- Taxonamy of Parsers
+- Study of Parsers
+- Programming Pardiagms - OOP - Functional
+- Advanced Programming Concepts - Generator - Decorator - Interface - Async-Await - Lambdas - Clousre - Currying
