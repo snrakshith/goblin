@@ -1,3 +1,13 @@
+## Aim of the above problem
+
+- Setup
+- Loops
+- Handle user input
+- Handle `HTTP Request` and Error Handling
+- Code Refactor or Folder Structure or Code Modularity
+
+---
+
 - Write a `Hello World` Program
 - Display a `Hello World` text n times
   - Input section
@@ -11,13 +21,3 @@
   - example: `Hello Jim`
 
 - Refactor the above program into different files.
-
----
-
-## Aim of the above problem
-
-- Setup
-- Loops
-- Handle user input
-- Handle `HTTP Request` and Error Handling
-- Code Refactor or Folder Structure or Code Modularity

@@ -1,4 +1,4 @@
-# Learn X `Language`
+# Learn `Any Language`
 
 - Basic Env Setup
 - Write a Basic Hello World Program
