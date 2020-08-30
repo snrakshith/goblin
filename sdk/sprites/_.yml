@@ -1,0 +1,3 @@
+cli: cli
+gc: garbage collector
+vm: virtual machine
