@@ -15,6 +15,11 @@ Root Domain: goblin-lang.org
         - Code Formater
 
     : internals.goblin-lang.org
+        - Grammar Spec
+            - Stable Spec
+            - Draft Spec
+        - White Paper
+        - Yellow Paper
         - VM
         - GC
         - CLI
