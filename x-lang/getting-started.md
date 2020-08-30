@@ -1,5 +1,3 @@
-## `WorkSheet Framework`
-
 - Write a `Hello World` Program
 - Display a `Hello World` text n times
   - Input section
