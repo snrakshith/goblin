@@ -4,7 +4,7 @@
 - Why we need a new Programming Language ?
 - What is a good Programming Language ?
   - Well there is no universally accepted metric for `language design`
-  - A good language is one people use ..
+  - A good language is one which people use .
 
 ---
 
